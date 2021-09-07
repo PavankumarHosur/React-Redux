@@ -1,0 +1,315 @@
+{
+  "admin": [
+    {
+      "userName": "admin",
+      "password": "admin"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "fid": 12233,
+      "ancillaryServices": ["baggage", "wifi"],
+      "inflightShop": ["Iphone", "Oneplus"],
+      "specialMeal": ["Dosa"]
+    },
+    {
+      "id": 2,
+      "fid": 13322,
+      "ancillaryServices": ["Wifi", "baggage"],
+      "inflightShop": ["Oneplus", "Nikon"],
+      "specialMeal": ["Dosa"]
+    }
+  ],
+  "flights": [
+    {
+      "id": 12233,
+      "scheduleDate": "2014-01-01",
+      "time": "23:28:56",
+      "source": "Bangalore",
+      "destination": "Delhi"
+    },
+    {
+      "id": 13322,
+      "scheduleDate": "2014-01-01",
+      "time": "23:28:56",
+      "source": "Kolkata",
+      "destination": "Bangalore"
+    }
+  ],
+  "seats": [
+    {
+      "id": "1A",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "1B",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "1C",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "1D",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "2A",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "2B",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "2C",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "2D",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "3A",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "3B",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "3C",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "3D",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "4A",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "4B",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "4C",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    },
+    {
+      "id": "4D",
+      "flightId": 12233,
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false
+    }
+  ],
+  "passengers": [
+    {
+      "id": 1,
+      "name": "Ragu Ram A",
+      "checkedIn": true,
+      "wheelchairRequired": true,
+      "infants": false,
+      "ancillaryServices": "baggage",
+      "seatNo": "1A",
+      "specialMeal": "Dosa",
+      "inflightShop": "Iphone",
+      "passport": "AXX12XXX",
+      "address": "Mangalore",
+      "dob": "2014-01-01",
+      "fid": 12233,
+      "hovered": false
+    },
+    {
+      "id": 2,
+      "name": "Samson",
+      "checkedIn": true,
+      "wheelchairRequired": false,
+      "infants": true,
+      "ancillaryServices": "wifi",
+      "seatNo": "1B",
+      "specialMeal": "Dosa",
+      "inflightShop": "Iphone",
+      "passport": "",
+      "address": "Delhi",
+      "dob": "",
+      "fid": 12233,
+      "hovered": false
+    },
+    {
+      "id": 3,
+      "name": "Steve",
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": true,
+      "ancillaryServices": "Car Service",
+      "seatNo": "2A",
+      "specialMeal": "true",
+      "inflightShop": "Iphone",
+      "passport": "BXX12XXX",
+      "address": "",
+      "dob": "2014-01-01",
+      "fid": 12233,
+      "hovered": false
+    },
+    {
+      "id": 4,
+      "name": "Ramesh Kumar",
+      "checkedIn": false,
+      "wheelchairRequired": true,
+      "infants": false,
+      "ancillaryServices": "baggage",
+      "seatNo": "4F",
+      "specialMeal": "true",
+      "inflightShop": "",
+      "passport": "BXX12XXX",
+      "address": "WB",
+      "dob": "2014-01-01",
+      "fid": 13322,
+      "hovered": false
+    },
+    {
+      "id": 5,
+      "name": "Yathi",
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false,
+      "ancillaryServices": "baggage",
+      "specialMeal": "true",
+      "inflightShop": "Headphone",
+      "passport": "",
+      "address": "Mangalore",
+      "dob": "2014-01-01",
+      "fid": 13322,
+      "hovered": false
+    },
+    {
+      "id": 6,
+      "name": "Prabhu",
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false,
+      "ancillaryServices": "baggage",
+      "seatNo": "6A",
+      "specialMeal": "true",
+      "inflightShop": "",
+      "passport": "BXX12XXX",
+      "address": "",
+      "dob": "2014-01-01",
+      "fid": 13322,
+      "hovered": false
+    },
+    {
+      "id": 7,
+      "name": "Prem",
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false,
+      "ancillaryServices": "baggage",
+      "seatNo": "1E",
+      "specialMeal": "true",
+      "inflightShop": "",
+      "passport": "BXX12XXX",
+      "address": "MH",
+      "dob": "2014-01-01",
+      "fid": 13322,
+      "hovered": false
+    },
+    {
+      "id": 8,
+      "name": "ABD",
+      "checkedIn": true,
+      "wheelchairRequired": false,
+      "infants": false,
+      "ancillaryServices": "",
+      "seatNo": "6F",
+      "specialMeal": "",
+      "inflightShop": "",
+      "passport": "BXX12XXX",
+      "address": "Mangalore",
+      "dob": "",
+      "fid": 12233,
+      "hovered": false
+    },
+    {
+      "id": 9,
+      "name": "Raj",
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false,
+      "ancillaryServices": "Wifi",
+      "seatNo": "",
+      "specialMeal": "Idli",
+      "inflightShop": "Oneplus",
+      "passport": "BXX12XXX",
+      "address": "Mysore",
+      "dob": "",
+      "fid": 13322,
+      "hovered": false
+    },
+    {
+      "id": 10,
+      "name": "munna",
+      "checkedIn": false,
+      "wheelchairRequired": false,
+      "infants": false,
+      "ancillaryServices": "baggage",
+      "seatNo": "",
+      "specialMeal": "false",
+      "inflightShop": "",
+      "passport": "BXX12XXX",
+      "address": "kashmir",
+      "dob": "",
+      "fid": 13322,
+      "hovered": false
+    }
+  ]
+}

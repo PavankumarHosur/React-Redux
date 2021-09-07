@@ -1,0 +1,11 @@
+.flight-details {
+  margin-top: 30px;
+  .flight {
+    display: flex;
+    p {
+      flex: 1;
+    }
+  }
+  padding: 10px;
+  border: 1px solid rgb(184, 82, 82);
+}

@@ -1,0 +1,28 @@
+.nav-bar {
+  width: 100%;
+
+  align-items: center;
+  margin-top: 20px;
+
+  nav {
+    flex: 1;
+    text-align: right;
+
+    ul li {
+      list-style: none;
+      display: inline-block;
+    }
+    ul li:hover {
+      color: darkorange;
+      cursor: pointer;
+    }
+
+    ul li {
+      padding: 0px 10px;
+      text-decoration: none;
+    }
+    ul li .link {
+      text-decoration: none;
+    }
+  }
+}

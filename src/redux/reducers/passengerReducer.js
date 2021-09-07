@@ -1,19 +1,12 @@
-import { CHECK_IN_PASSENERS } from "../actionTypes/checkInActionTypes";
-import { UNDO_CHECK_IN_PASSENGERS } from "../actionTypes/checkInActionTypes";
+import { DISPLAY_PASSENGERS } from "../actionTypes/passengerActionTypes";
 const initialState = {
-  name: "Pavan",
-  planeId: "F1",
-  seatNo: 1,
-  checkIn: false,
+  passengers: [],
 };
 
 const passengersReducer = (state = initialState, action) => {
   switch (action.type) {
-    case CHECK_IN_PASSENERS:
-      return state;
-
-    case UNDO_CHECK_IN_PASSENGERS:
-      return state;
+    case DISPLAY_PASSENGERS:
+      return { ...state, passengers: action.payLoad };
 
     default:
       return state;

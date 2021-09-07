@@ -4,7 +4,7 @@ import passengersReducer from "./reducers/passengerReducer";
 
 const rootReducer = combineReducers({
   flight: FlightReducer,
-  // passenger: passengersReducer,
+  passenger: passengersReducer,
 });
 
 export default rootReducer;
