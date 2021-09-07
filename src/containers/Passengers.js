@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { displayPassengers } from "../redux/actions/passengersActions";
 
 function Passengers() {
-  const passengers = useSelector((state) => state.passenger.passengers);
+  const passengersList = useSelector((state) => state.passenger.passengers);
   const dispatch = useDispatch();
 
   const fetchPassengers = async () => {
@@ -15,9 +15,11 @@ function Passengers() {
   useEffect(() => {
     fetchPassengers();
   }, []);
+
   return (
     <div>
-      {passengers.map((pass) => (
+      Hello
+      {passengersList.map((pass) => (
         <h2>{pass.name}</h2>
       ))}
     </div>

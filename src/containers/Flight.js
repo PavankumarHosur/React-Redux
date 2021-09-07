@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { checkInPassengers } from "../redux/actions/flightActions";
@@ -13,6 +13,8 @@ function Flight() {
   const flightList = useSelector((state) => state.flight.flights);
   const flight = flightList.find((element) => element.id == flightId);
   console.log(flightList);
+  var seats = [];
+  seats = useSelector((state) => state.flight.seats);
   // alert(flight.source);
 
   const getSeatDetails = async () => {
@@ -33,6 +35,10 @@ function Flight() {
   const handleChange = (e, flightId, seatNo) => {
     dispatch(checkInPassengers(flightId, seatNo, e.target.checked));
   };
+
+  useEffect(() => {
+    getSeatDetails();
+  }, []);
 
   return (
     <div>
@@ -59,7 +65,7 @@ function Flight() {
                   <input
                     type="checkbox"
                     id="1A"
-                    checked="true"
+                    checked={seats[0].checkedIn}
                     onChange={handleChange}
                   />
                   <br></br>
@@ -69,7 +75,12 @@ function Flight() {
               <div className="box">
                 {" "}
                 <li class="seat">
-                  <input type="checkbox" id="1B" />
+                  <input
+                    type="checkbox"
+                    id="1B"
+                    checked={seats[1].checkedIn}
+                    onChange={handleChange}
+                  />
                   <br></br>
                   <label for="1B">1B</label>
                 </li>
@@ -77,7 +88,12 @@ function Flight() {
               <div className="box-3">
                 {" "}
                 <li class="seat">
-                  <input type="checkbox" id="1C" />
+                  <input
+                    type="checkbox"
+                    id="1C"
+                    checked={seats[2].checkedIn}
+                    onChange={handleChange}
+                  />
                   <br></br>
                   <label for="1C">1C</label>
                 </li>

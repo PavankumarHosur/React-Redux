@@ -41,21 +41,21 @@
     {
       "id": "1A",
       "flightId": 12233,
-      "checkedIn": false,
+      "checkedIn": true,
       "wheelchairRequired": false,
       "infants": false
     },
     {
       "id": "1B",
       "flightId": 12233,
-      "checkedIn": false,
+      "checkedIn": true,
       "wheelchairRequired": false,
       "infants": false
     },
     {
       "id": "1C",
       "flightId": 12233,
-      "checkedIn": false,
+      "checkedIn": true,
       "wheelchairRequired": false,
       "infants": false
     },
