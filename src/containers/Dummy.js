@@ -1,214 +1,40 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import "../CSS/Style.css";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import _ from "lodash";
+import {
+  displayAllFlightDetails,
+  displayAllFlights,
+} from "../redux/actions/flightActions";
 
 function Dummy() {
-  return (
-    <div>
-      <ol class="cabin fuselage">
-        <li class="row row--1">
-          <ol class="seats" type="A">
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1A" />
-                <br></br>
-                <label for="1A">1A</label>
-              </li>
-            </div>
-            <div className="box">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1B" />
-                <br></br>
-                <label for="1B">1B</label>
-              </li>
-            </div>
-            <div className="box-3">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1C" />
-                <br></br>
-                <label for="1C">1C</label>
-              </li>
-            </div>
+  const dispatch = useDispatch();
+  const flightList = useSelector((state) => state.flight);
 
-            <div className="box">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1D" />
-                <br></br>
-                <label for="1D">1D</label>
-              </li>
-            </div>
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1E" />
-                <br></br>
-                <label for="1E">1E</label>
-              </li>
-            </div>
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1F" />
-                <br></br>
-                <label for="1F">1F</label>
-              </li>
-            </div>
-          </ol>
-        </li>
-        <li class="row row--1">
-          <ol class="seats" type="A">
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1A" />
-                <br></br>
-                <label for="1A">1A</label>
-              </li>
-            </div>
-            <div className="box">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1B" />
-                <br></br>
-                <label for="1B">1B</label>
-              </li>
-            </div>
-            <div className="box-3">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1C" />
-                <br></br>
-                <label for="1C">1C</label>
-              </li>
-            </div>
+  useEffect(() => {
+    dispatch(displayAllFlights());
+  }, []);
+  const showData = () => {
+    if (flightList.loading) {
+      return <p>Loading...</p>;
+    }
 
-            <div className="box">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1D" />
-                <br></br>
-                <label for="1D">1D</label>
-              </li>
-            </div>
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1E" />
-                <br></br>
-                <label for="1E">1E</label>
-              </li>
-            </div>
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1F" />
-                <br></br>
-                <label for="1F">1F</label>
-              </li>
-            </div>
-          </ol>
-        </li>
-        <li class="row row--1">
-          <ol class="seats" type="A">
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1A" />
-                <br></br>
-                <label for="1A">1A</label>
-              </li>
-            </div>
-            <div className="box">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1B" />
-                <br></br>
-                <label for="1B">1B</label>
-              </li>
-            </div>
-            <div className="box-3">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1C" />
-                <br></br>
-                <label for="1C">1C</label>
-              </li>
-            </div>
+    if (!_.isEmpty(flightList.flights)) {
+      return (
+        <div>
+          <ul>
+            {flightList.flights.map((flightId) => {
+              return <li>{flightId.id}</li>;
+            })}
+          </ul>
+        </div>
+      );
+    }
+    // if (flightList.error !== "") {
+    //   return <p>{flightList.error}</p>;
+    // }
+  };
 
-            <div className="box">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1D" />
-                <br></br>
-                <label for="1D">1D</label>
-              </li>
-            </div>
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1E" />
-                <br></br>
-                <label for="1E">1E</label>
-              </li>
-            </div>
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1F" />
-                <br></br>
-                <label for="1F">1F</label>
-              </li>
-            </div>
-          </ol>
-        </li>
-        <li class="row row--1">
-          <ol class="seats" type="A">
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1A" />
-                <br></br>
-                <label for="1A">1A</label>
-              </li>
-            </div>
-            <div className="box">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1B" />
-                <br></br>
-                <label for="1B">1B</label>
-              </li>
-            </div>
-            <div className="box-3">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1C" />
-                <br></br>
-                <label for="1C">1C</label>
-              </li>
-            </div>
-
-            <div className="box">
-              {" "}
-              <li class="seat">
-                <input type="checkbox" id="1D" />
-                <br></br>
-                <label for="1D">1D</label>
-              </li>
-            </div>
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1E" />
-                <br></br>
-                <label for="1E">1E</label>
-              </li>
-            </div>
-            <div className="box">
-              <li class="seat">
-                <input type="checkbox" id="1F" />
-                <br></br>
-                <label for="1F">1F</label>
-              </li>
-            </div>
-          </ol>
-        </li>
-      </ol>
-    </div>
-  );
+  return <div>{showData()}</div>;
 }
 
 export default Dummy;

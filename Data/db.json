@@ -9,16 +9,32 @@
     {
       "id": 1,
       "fid": 12233,
-      "ancillaryServices": ["baggage", "wifi"],
-      "inflightShop": ["Iphone", "Oneplus"],
-      "specialMeal": ["Dosa"]
+      "ancillaryServices": [
+        "baggage",
+        "wifi"
+      ],
+      "inflightShop": [
+        "Iphone",
+        "Oneplus"
+      ],
+      "specialMeal": [
+        "Dosa"
+      ]
     },
     {
       "id": 2,
       "fid": 13322,
-      "ancillaryServices": ["Wifi", "baggage"],
-      "inflightShop": ["Oneplus", "Nikon"],
-      "specialMeal": ["Dosa"]
+      "ancillaryServices": [
+        "Wifi",
+        "baggage"
+      ],
+      "inflightShop": [
+        "Oneplus",
+        "Nikon"
+      ],
+      "specialMeal": [
+        "Dosa"
+      ]
     }
   ],
   "flights": [
@@ -35,13 +51,34 @@
       "time": "23:28:56",
       "source": "Kolkata",
       "destination": "Bangalore"
+    },
+    {
+      "id": 12234,
+      "scheduleDate": "2014-01-01",
+      "time": "23:28:56",
+      "source": "Hubballi",
+      "destination": "Delhi"
+    },
+    {
+      "scheduleDate": "2014-01-01",
+      "time": "23:28:56",
+      "source": "Hubballi",
+      "destination": "Delhi",
+      "id": 13323
+    },
+    {
+      "scheduleDate": "2014-01-01",
+      "time": "23:28:56",
+      "source": "Mangaluru",
+      "destination": "Hubballi",
+      "id": 13324
     }
   ],
   "seats": [
     {
       "id": "1A",
       "flightId": 12233,
-      "checkedIn": true,
+      "checkedIn": false,
       "wheelchairRequired": false,
       "infants": false
     },

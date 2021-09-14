@@ -14,8 +14,8 @@ ol {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    .box-3 {
-      padding: 10px 80px 10px 10px;
+    .box-2 {
+      padding: 10px;
       .seat {
         @include seat-design();
         background-color: beige;

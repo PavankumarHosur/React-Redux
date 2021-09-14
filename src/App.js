@@ -3,7 +3,12 @@ import "./CSS/Style.css";
 import { Provider } from "react-redux";
 import { store, persistor } from "./redux/store";
 import Flight from "./containers/Flight";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import StaffComponent from "./containers/StaffComponent";
 import Header from "./containers/Header";
 import FlightList from "./containers/FlightList";
@@ -24,8 +29,9 @@ function App() {
               <Route exact path="/flights" component={FlightList} />
               <Route exact path="/passengers" component={Passengers} />
               <Route path="/flights/:flightId" component={Flight}></Route>
-              <Route path="/flightSeats" component={FlightSeats}></Route>
               <Route path="/dummy" component={Dummy}></Route>
+              <Redirect to="/"></Redirect>
+              {/* redirect to "/" */}
             </Switch>
           </Router>
         </PersistGate>
