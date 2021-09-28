@@ -1,46 +1,45 @@
-import React, { useEffect, componentDidCatch } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import _ from "lodash";
+import { displayAllFlightDetails } from "../redux/actions/flightListActions";
 import { Link } from "react-router-dom";
-import { DISPLAY_FLIGHTS } from "../redux/actionTypes/checkInActionTypes";
-import { displayAllFlights } from "../redux/actions/flightActions";
 
 function FlightList() {
-  console.log("called1");
-  const flight = useSelector((state) => state.flight.flights);
   const dispatch = useDispatch();
+  const flightList = useSelector((state) => state.flight);
 
-  const fetchFlights = async () => {
-    try {
-      const response = await fetch("http://localhost:8000/flights");
+  useEffect(() => {
+    dispatch(displayAllFlightDetails());
+  }, []);
 
-      if (!response.ok) {
-        throw Error(response.statusText);
-      }
-      const flights = await response.json();
+  const showData = () => {
+    if (flightList.loading) {
+      return <p>Loading...</p>;
+    }
 
-      dispatch(displayAllFlights(flights));
-    } catch (error) {
-      alert(error);
+    if (!_.isEmpty(flightList.flights)) {
+      return (
+        <div>
+          <ul>
+            {flightList.flights.map((flight) => {
+              return (
+                <Link to={`/flights/${flight.id}`}>
+                  <ul>
+                    <li>{flight.id}</li>
+                  </ul>
+                </Link>
+              );
+            })}
+          </ul>
+        </div>
+      );
+    }
+    if (flightList.error !== "") {
+      return <p>{flightList.error}</p>;
     }
   };
 
-  useEffect(() => {
-    fetchFlights();
-  }, []);
-
-  return (
-    <div>
-      {flight.map((flight) => {
-        return (
-          <Link to={`/flights/${flight.id}`}>
-            <ul>
-              <li>{flight.id}</li>
-            </ul>
-          </Link>
-        );
-      })}
-    </div>
-  );
+  return <div>{showData()}</div>;
 }
 
 export default FlightList;

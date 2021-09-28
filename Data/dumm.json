@@ -1,0 +1,38 @@
+{
+  "seats": [
+    {
+      "pid": 12233,
+      "seats": [
+        {
+          "id": "1A",
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "1B",
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        }
+      ]
+    },
+    {
+      "pid": 13344,
+      "seats": [
+        {
+          "id": "1A",
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "1B",
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        }
+      ]
+    }
+  ]
+}

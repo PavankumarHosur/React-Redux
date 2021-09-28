@@ -76,123 +76,244 @@
   ],
   "seats": [
     {
-      "id": "1A",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
+      "id": 12233,
+      "seat": [
+        {
+          "id": "1A",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "1B",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": true
+        },
+        {
+          "id": "1C",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "1D",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "2A",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "2B",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "2C",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": true,
+          "infants": false
+        },
+        {
+          "id": "2D",
+          "flightId": 12233,
+          "checkedIn": false,
+          "wheelchairRequired": true,
+          "infants": true
+        },
+        {
+          "id": "3A",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "3B",
+          "flightId": 12233,
+          "checkedIn": false,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "3C",
+          "flightId": 12233,
+          "checkedIn": false,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "3D",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": true,
+          "infants": false
+        },
+        {
+          "id": "4A",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "4B",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": true,
+          "infants": true
+        },
+        {
+          "id": "4C",
+          "flightId": 12233,
+          "checkedIn": false,
+          "wheelchairRequired": false,
+          "infants": true
+        },
+        {
+          "id": "4D",
+          "flightId": 12233,
+          "checkedIn": true,
+          "wheelchairRequired": true,
+          "infants": false
+        }
+      ]
     },
     {
-      "id": "1B",
-      "flightId": 12233,
-      "checkedIn": true,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "1C",
-      "flightId": 12233,
-      "checkedIn": true,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "1D",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "2A",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "2B",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "2C",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "2D",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "3A",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "3B",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "3C",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "3D",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "4A",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "4B",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "4C",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
-    },
-    {
-      "id": "4D",
-      "flightId": 12233,
-      "checkedIn": false,
-      "wheelchairRequired": false,
-      "infants": false
+      "id": 13322,
+      "seat": [
+        {
+          "id": "1A",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "1B",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "1C",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "1D",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "2A",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "2B",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "2C",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "2D",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "3A",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "3B",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "3C",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "3D",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "4A",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "4B",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "4C",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        },
+        {
+          "id": "4D",
+          "flightId": 13322,
+          "checkedIn": true,
+          "wheelchairRequired": false,
+          "infants": false
+        }
+      ]
     }
   ],
   "passengers": [
     {
       "id": 1,
       "name": "Ragu Ram A",
-      "checkedIn": true,
       "wheelchairRequired": true,
       "infants": false,
       "ancillaryServices": "baggage",
@@ -203,12 +324,13 @@
       "address": "Mangalore",
       "dob": "2014-01-01",
       "fid": 12233,
-      "hovered": false
+      "hovered": false,
+      "checkedIn": true
     },
     {
       "id": 2,
       "name": "Samson",
-      "checkedIn": true,
+      "checkedIn": false,
       "wheelchairRequired": false,
       "infants": true,
       "ancillaryServices": "wifi",
@@ -240,11 +362,11 @@
     {
       "id": 4,
       "name": "Ramesh Kumar",
-      "checkedIn": false,
+      "checkedIn": true,
       "wheelchairRequired": true,
       "infants": false,
       "ancillaryServices": "baggage",
-      "seatNo": "4F",
+      "seatNo": "4D",
       "specialMeal": "true",
       "inflightShop": "",
       "passport": "BXX12XXX",
@@ -256,13 +378,14 @@
     {
       "id": 5,
       "name": "Yathi",
-      "checkedIn": false,
+      "checkedIn": true,
       "wheelchairRequired": false,
       "infants": false,
       "ancillaryServices": "baggage",
       "specialMeal": "true",
       "inflightShop": "Headphone",
       "passport": "",
+      "seatNo": "4D",
       "address": "Mangalore",
       "dob": "2014-01-01",
       "fid": 13322,
@@ -271,11 +394,11 @@
     {
       "id": 6,
       "name": "Prabhu",
-      "checkedIn": false,
+      "checkedIn": true,
       "wheelchairRequired": false,
       "infants": false,
       "ancillaryServices": "baggage",
-      "seatNo": "6A",
+      "seatNo": "3A",
       "specialMeal": "true",
       "inflightShop": "",
       "passport": "BXX12XXX",
@@ -287,11 +410,11 @@
     {
       "id": 7,
       "name": "Prem",
-      "checkedIn": false,
+      "checkedIn": true,
       "wheelchairRequired": false,
       "infants": false,
       "ancillaryServices": "baggage",
-      "seatNo": "1E",
+      "seatNo": "1A",
       "specialMeal": "true",
       "inflightShop": "",
       "passport": "BXX12XXX",
@@ -307,7 +430,7 @@
       "wheelchairRequired": false,
       "infants": false,
       "ancillaryServices": "",
-      "seatNo": "6F",
+      "seatNo": "3D",
       "specialMeal": "",
       "inflightShop": "",
       "passport": "BXX12XXX",
@@ -319,11 +442,11 @@
     {
       "id": 9,
       "name": "Raj",
-      "checkedIn": false,
+      "checkedIn": true,
       "wheelchairRequired": false,
       "infants": false,
       "ancillaryServices": "Wifi",
-      "seatNo": "",
+      "seatNo": "2D",
       "specialMeal": "Idli",
       "inflightShop": "Oneplus",
       "passport": "BXX12XXX",
@@ -335,11 +458,11 @@
     {
       "id": 10,
       "name": "munna",
-      "checkedIn": false,
+      "checkedIn": true,
       "wheelchairRequired": false,
       "infants": false,
       "ancillaryServices": "baggage",
-      "seatNo": "",
+      "seatNo": "3C",
       "specialMeal": "false",
       "inflightShop": "",
       "passport": "BXX12XXX",
